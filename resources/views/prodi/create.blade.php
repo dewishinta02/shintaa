@@ -38,7 +38,7 @@
                   <div class="card-body">
                     <div class="form-group">
                       <label for="nama_prodi">Nama Prodi</label>
-                      <input type="text" name="nama_prodi" class="form-control is-@error('nama_prodi')invalid @enderror" id="nama_prodi" placeholder="Masukkan Prodi">
+                      <input type="text" name="nama_prodi" class="form-control @error is-invalid('nama_prodi') @enderror" id="nama_prodi" placeholder="Masukkan Prodi">
                       @error('nama_prodi')
                         <div class="invalid-feedback">
                           {{ $message }}
