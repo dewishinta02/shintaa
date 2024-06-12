@@ -51,9 +51,8 @@
                      
                    
                     <tr>
-                      <td>{{$loop->iteration}}</td>
-                      <td>{{$p->nama_prodi}}</td>
-                      <td></td>
+                      <td>{{$m->alamat}}</td>
+                      <td> <img src="dist/img/{{ $m->foto }}?>" width="100px" height="100px" /> </td>
                       <td><a href="{{ url("prodi/$p->id/edit") }}" class="btn btn-warning">Edit</a>
                       <form action="{{ url("prodi/$p->id") }}" method="post" class="d-inline">
                         @method('delete')

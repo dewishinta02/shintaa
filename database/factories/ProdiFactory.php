@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Mahasiswa;
+use App\Models\Prodi;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,7 +20,9 @@ class ProdiFactory extends Factory
     {
         return [
             //
-            'nama_prodi' => fake()->sentence(mt_rand(2,3))
+            'nama_prodi' => fake()->sentence(mt_rand(2, 3))
+
         ];
-    }
+    
+}
 }
